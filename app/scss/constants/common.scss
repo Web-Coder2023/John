@@ -1,11 +1,12 @@
 ._label {
-    &-page{
-        &-title{
+    &-page {
+        &-title {
             font-size: 44px;
             font-weight: 700;
             line-height: 136.364%;
         }
     }
+
     &-title {
         font-size: 22px;
         font-weight: 400;
@@ -14,5 +15,33 @@
     &-text {
         font-weight: 400;
         line-height: 136.364%;
+    }
+
+    &-btn {
+        background-color: #FF6464;
+        padding: 17px 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 38px;
+
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 45px;
+            transform: skewX(-45deg); // Наклон
+            animation: flareAnimation;
+            left: -150%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+            animation: flareAnimation 3s infinite linear; // Время и тип анимации можно менять
+        }
     }
 }
