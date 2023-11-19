@@ -1,0 +1,49 @@
+// Подключение шрифтов
+@font-face {
+    font-family: 'icons';
+    src: url('../iconfont/font/icons.eot?kzeheo');
+    src: url('../iconfont/font/icons.eot?kzeheo#iefix') format('embedded-opentype'),
+        url('../iconfont/font/icons.ttf?kzeheo') format('truetype'),
+        url('../iconfont/font/icons.woff?kzeheo') format('woff'),
+        url('../iconfont/font/icons.svg?kzeheo#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="_icon-"],
+[class*=" _icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-fb:before {
+    content: "\e900";
+}
+
+._icon-insta:before {
+    content: "\e901";
+}
+
+._icon-Linkedin:before {
+    content: "\e902";
+}
+
+._icon-tw:before {
+    content: "\e903";
+}
+
+// Флаг &display=swap необходим для коректного отображения шрифтов
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
+
+// Шрифт по умолчанию
+$defaultFonts: 'Heebo', sans-serif;

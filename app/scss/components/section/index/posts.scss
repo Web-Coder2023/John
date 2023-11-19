@@ -1,0 +1,67 @@
+.posts {
+    padding: 27px 0 30px;
+    background: #EDF7FA;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-view {
+            color: #00A8CC;
+            font-weight: 400;
+        }
+    }
+
+    &__card {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        &-item {
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+            padding: 24px 23px 26px 21px;
+        }
+
+        &-title {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        &-info {
+            margin: 23px 0;
+            font-size: 18px;
+            font-weight: 400;
+            span{
+                &:not(:last-child){
+                    border-right: 1px solid #000;
+                    padding-right: 26px;
+                    margin-right: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .posts {
+        &__card{
+            justify-content: center;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media (max-width: $mobileSmall) {
+    .posts {
+        &__inner{
+            justify-content: center;
+            &-view{
+                display: none;
+            }
+        }
+    }
+}
