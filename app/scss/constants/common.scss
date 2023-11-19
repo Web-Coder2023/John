@@ -1,4 +1,11 @@
 ._label {
+    &-page{
+        &-title{
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 136.364%;
+        }
+    }
     &-title {
         font-size: 22px;
         font-weight: 400;
